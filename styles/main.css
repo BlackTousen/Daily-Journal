@@ -1,0 +1,17 @@
+.form-container {
+   /* border: 1px double black; */
+    display: flex;
+    flex-direction: column;
+}
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+.form-container form fieldset {
+    display: flex;
+    flex-direction: column;
+}
+/* #journalDate {
+    display: flex;
+   flex-direction: column;
+} */
