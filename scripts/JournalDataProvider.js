@@ -16,6 +16,20 @@ const journal = [
         mood: "Ok"
     },
     {
+        id: 3,
+        date: "08/31/2020",
+        concept: "DOT MAP",
+        entry: ".map was discussed and whatnot.",
+        mood: "Ok"
+    },
+    {
+        id: 4,
+        date: "09/01/2020",
+        concept: "EventHubs",
+        entry: "Learned to not make stuff so reliant on other stuffs.",
+        mood: "Ok"
+    },
+    {
     id: 2,
     date: "08/26/2020",
     concept: "Lab Time",
