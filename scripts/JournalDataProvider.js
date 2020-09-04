@@ -10,6 +10,11 @@
 const eventHub = document.querySelector(".form-container")
 let journal = []
 
+const dispatchStateChangeEvent = () => {
+    const entryStateChangedEvent = new CustomEvent("entryStateChanged")
+
+    eventHub.dispatchEvent(entryStateChangedEvent)
+}
 
 /*
     You export a function that provides a version of the
@@ -29,4 +34,15 @@ export const getEntries = () => {
             // What should happen when we finally have the array?
             journal = entries
         })
+}
+export const saveEntry = note => {
+    return fetch('http://localhost:8088/notes', {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(note)
+    })
+    .then(getEntries)
+    .then(dispatchStateChangeEvent)
 }
