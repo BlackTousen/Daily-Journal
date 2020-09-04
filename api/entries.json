@@ -1,0 +1,39 @@
+{
+    "entries": [
+        {
+            "id": 1,
+            "date": "07/24/2025",
+            "concept": "HTML & CSS",
+            "entry": "We talked about HTML components and how to make grid layouts with Flexbox in CSS.",
+            "mood": "Ok"
+        },
+        {
+            "id": 2,
+            "date": "08/26/2020",
+            "concept": "Lab Time",
+            "entry": "We were given lab time to do practices! Time to learn.",
+            "mood": "Happy"
+        },
+        {
+            "id": 3,
+            "date": "08/31/2020",
+            "concept": "DOT MAP",
+            "entry": ".map was discussed and whatnot.",
+            "mood": "Ok"
+        },
+        {
+            "id": 4,
+            "date": "09/01/2020",
+            "concept": "EventHubs",
+            "entry": "Learned to not make stuff so reliant on other stuffs.",
+            "mood": "Ok"
+        },
+        {
+            "id": 5,
+            "date": "09/02/2020",
+            "concept": "API",
+            "entry": "Hosted our own API!",
+            "mood": "Ok"
+        }
+    ]
+}

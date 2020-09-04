@@ -7,36 +7,9 @@
  */
 
 // This is the original data.
-const journal = [
-    {
-        id: 1,
-        date: "07/24/2025",
-        concept: "HTML & CSS",
-        entry: "We talked about HTML components and how to make grid layouts with Flexbox in CSS.",
-        mood: "Ok"
-    },
-    {
-        id: 3,
-        date: "08/31/2020",
-        concept: "DOT MAP",
-        entry: ".map was discussed and whatnot.",
-        mood: "Ok"
-    },
-    {
-        id: 4,
-        date: "09/01/2020",
-        concept: "EventHubs",
-        entry: "Learned to not make stuff so reliant on other stuffs.",
-        mood: "Ok"
-    },
-    {
-    id: 2,
-    date: "08/26/2020",
-    concept: "Lab Time",
-    entry: "We were given lab time to do practices! Time to learn.",
-    mood: "Happy"
-}
-]
+const eventHub = document.querySelector(".form-container")
+let journal = []
+
 
 /*
     You export a function that provides a version of the
@@ -48,4 +21,12 @@ export const useJournalEntries = () => {
             Date.parse(currentEntry.date) - Date.parse(nextEntry.date)
     )
     return sortedByDate
+}
+export const getEntries = () => {
+    return fetch("http://localhost:8088/entries") // Fetch from the API
+        .then(response => response.json() )  // Parse as JSON
+        .then(entries => {
+            // What should happen when we finally have the array?
+            journal = entries
+        })
 }
